@@ -194,6 +194,10 @@ strong {
   padding-left: 20px;
 }
 
+.sidebar-nav-links-wrapper {
+  overflow: visible;
+}
+
 .single-nav-link-wrapper {
   position: relative;
   display: -webkit-box;
@@ -539,26 +543,34 @@ strong {
 }
 
 .categories-percent {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  font-size: 19px;
+  font-weight: 500;
   text-align: center;
 }
 
 .categories-name {
   color: #627183;
-  font-size: 12px;
+  font-size: 16px;
 }
 
 .categories-percentage {
   color: #3c77ee;
-  font-size: 12px;
+  font-size: 17px;
   font-weight: 500;
 }
 
 .categories-percentage.red-color {
   color: #f96363;
+  font-size: 17px;
 }
 
 .categories-percentage.green {
   color: #4cbf4c;
+  font-size: 17px;
 }
 
 .line-chart-wrapper {
@@ -1151,6 +1163,7 @@ strong {
 }
 
 .latest-invoices-wrapper {
+  display: block;
   padding: 20px 25px 22px;
   border-radius: 10px;
   background-color: #fff;
@@ -1158,8 +1171,7 @@ strong {
 }
 
 .latest-invoice-list-menu-wrapper {
-  display: -ms-grid;
-  display: grid;
+  display: none;
   margin-bottom: 20px;
   padding: 11px 20px 10px;
   grid-auto-columns: 1fr;
@@ -1181,8 +1193,7 @@ strong {
 }
 
 .latest-invoice-list-wrapper {
-  display: -ms-grid;
-  display: grid;
+  display: none;
   padding: 20px;
   -webkit-box-align: center;
   -webkit-align-items: center;
@@ -6263,6 +6274,11 @@ strong {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
+}
+
+.html-embed-4 {
+  margin-left: 0px;
+  padding-left: 0px;
 }
 
 @media screen and (max-width: 991px) {
