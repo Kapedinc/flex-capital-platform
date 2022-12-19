@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <base href="./">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <style>
+      /* body{
+        background-color: darkgray;
+      } */
+      </style>
+        <script type="application/javascript">
+              
+              // Handler for .ready() called.
+              window.tiledeskSettings = 
+              {
+                  projectid: "5f4d01fb5ef9fa0045f10564", //"5b55e806c93dde00143163dd", //"5e8d7db806a5e200178e2df5", , //"5e8b398fef981300175e610e ", //
+                  //persistence:"local",                /** local/session/none **/
+                  // userToken: 'eyJhbGciOiJSUzI1NiIsImtpZCI6Ijk4MGVkMGQ3ODY2ODk1Y2E0M2MyMGRhZmM4NTlmMThjNjcwMWU3OTYiLCJ0eXAiOiJKV1QifQ.eyJwcm92aWRlcl9pZCI6ImFub255bW91cyIsImlzcyI6Imh0dHBzOi8vc2VjdXJldG9rZW4uZ29vZ2xlLmNvbS9jaGF0LXYyLWRldiIsImF1ZCI6ImNoYXQtdjItZGV2IiwiYXV0aF90aW1lIjoxNTYxMDIwNTg2LCJ1c2VyX2lkIjoicllXQmgwd2c2TE05U1drT2lMY0tySmdWVldkMiIsInN1YiI6InJZV0JoMHdnNkxNOVNXa09pTGNLckpnVlZXZDIiLCJpYXQiOjE1NjEwMjA1ODYsImV4cCI6MTU2MTAyNDE4NiwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6e30sInNpZ25faW5fcHJvdmlkZXIiOiJhbm9ueW1vdXMifX0.SID7kHLV0v5t0fd18WtlX_HfZ2nU2Qg6GU3HB2nNx9J7yaQQdZv1zkvXMmtJGIMCXw1Z_HMVDkbjqPOGOS-Wz8AF_Vdrxj2ePX6K6amE_DfZz2ECG-VrOghOPjggYwMCykmJu6k2IOHc3Z1jq9rTqCanHqmElUXTwDwUIub4OQ_fn6Ak1krotdNNUbdoFFDiPKt_39UC92Z3jbUf-2FQgxOWSJg7h8pjShe6anEFtdmjX50hl0dtbKhMNNacWtczAtRBrr1u7QCL0D8K-dzzxuduQUEMlnGPzYyQtaYfAxjWRQ8PP1BUBPeTNLiYtj4oprcCUS61qr3lBdw6tumtMw',
+                  // userId: "5b55e806c93dde00143163df", 
+                  isLogEnabled: false,                     /** true/false **/
+
+                  // preChatForm: false,
+                  calloutTimer:"0",
+                  // calloutTitle:"calloutTitle",
+                  // calloutMsg:"calloutMsg",
+                  // themeColor:"#cccccc",
+                  // themeForegroundColor:"#000000",
+                  // logoChat:"https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Coca-Cola_logo.svg/1280px-Coca-Cola_logo.svg.png",                  /** none/tiledesklogo/absolute url **/
+                  // welcomeTitle:"welcomeTitle",            /** string **/
+                  // welcomeMsg:"welcomeMsg",                /** string **/
+                  //align: "right",                             /** left/right **/
+                  
+                  // development: true, // da verificare in tiledesk.js
+                  // tenant: "tilechat2",
+                  // recipientId: "support-group-Lhug32g57j5xyB7IgT4",
+                  
+                  // widgetTitle: "widget Title Test",
+                  // poweredBy: "poweredBy",
+                  // userEmail: "czone555@gmail.com",
+                  // userFullname: "Dario",
+                  // isOpen: true,                             /** true/false **/
+                  // channelType: "group",                     /** group/direct **/
+                  // lang: "en",                               /** it/en **/
+                  // marginX: "40px",
+                  // marginY: "40px",
+                  // fullscreenMode: true,
+                  // hideHeaderCloseButton: true,
+                  //allowTranscriptDownload: true,
+                  //startFromHome: false,                       /** true/false **/
+                  // autoStart: false,                           /** true/false **/
+                  // isShown: false,                             /** true/false **/
+                  // filterByRequester: true,                  /** true/false **/
+                  // showWaitTime: false,                        /** true/false **/
+                  // showAvailableAgents: true,                 /** true/false **/
+                  // showLogoutOption: false,                    /** true/false **/  
+                  // showAttachmentButton: false, /** true(default)/false **/ 
+                  // showAllConversations: false, /** true(default)/false **/ 
+                  // privacyField: 'Accetto i termini della privacy <a style="text-transform: none" target="_blank" href="http://www.tiledesk.com/privacy.html">Privacy Policy</a>'
+              };
+        
+              (function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); 
+                js.id = id; //js.async=!0;
+                js.src = "./launch.js"; //https://s3.eu-west-1.amazonaws.com/tiledesk-widget/dev/2.0.4-beta.1/
+                fjs.parentNode.insertBefore(js, fjs);
+              }(document, 'script', 'tiledesk-jssdk'));
+              
+              window.tileDeskAsyncInit = function() {
+                console.log("testi.html tileDeskAsyncInit")
+                
+                // window.tiledesk.on('onLoadParams', function(event_data) {
+                //   console.log("testi.html onLoadParams");
+                //   setTimeout(function() {
+                //     window.tiledesk.showCallout()
+                //   }, 3000)
+                // });
+
+//                 window.tiledesk.on('onNewConversation', function(event_data) {
+//                     console.log("testi.html onNewConversation",event_data);
+//                     var httpRequest = createCORSRequest('POST', event_data.detail.appConfigs.apiUrl+event_data.detail.default_settings.projectid+'/events',false); //set async to false because loadParams must return when the get is complete
+//                     httpRequest.setRequestHeader('Content-type', 'application/json');
+//                     httpRequest.setRequestHeader('Authorization', 'JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1YWFhOTkwMjRjM2IxMTAwMTRiNDc4ZjAiLCJlbWFpbCI6ImFuZHJlYS5sZW9AZnJvbnRpZXJlMjEuaXQiLCJmaXJzdG5hbWUiOiJBbmRyZWEiLCJsYXN0bmFtZSI6IkxlbyIsImVtYWlsdmVyaWZpZWQiOnRydWUsImlhdCI6MTU4MjMxMTE4NSwiYXVkIjoiaHR0cHM6Ly90aWxlZGVzay5jb20iLCJpc3MiOiJodHRwczovL3RpbGVkZXNrLmNvbSIsInN1YiI6InVzZXIiLCJqdGkiOiI4NjIwOTgzNi0wY2JhLTQzMTItYTEwZS01N2NmOGMxMzk0OWIifQ.xS5Bz40oWgziDnMTFKgXl12ipRZrUopGdfbULhBUJcY');
+//                     httpRequest.send(JSON.stringify({"name":"new_conversation","attributes": {"id_user":event_data.detail.global.senderId, "request_id":event_data.detail.newConvId, "department": event_data.detail.global.departmentID, "subtype":"info", "fullname":event_data.detail.global.attributes.userFullname, "email":event_data.detail.global.attributes.userEmail, "attributes":event_data.detail.global.attributes}}));
+//                 });
+
+//                 window.tiledesk.on('isLoggedIn', function(event_data) {
+//                   console.log("testi.html isLoggedIn",event_data);
+//                   var httpRequest = createCORSRequest('POST', event_data.detail.appConfigs.apiUrl+event_data.detail.default_settings.projectid+'/events',false); //set async to false because loadParams must return when the get is complete
+//                   httpRequest.setRequestHeader('Content-type', 'application/json');
+//                   httpRequest.setRequestHeader('Authorization', 'JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1YWFhOTkwMjRjM2IxMTAwMTRiNDc4ZjAiLCJlbWFpbCI6ImFuZHJlYS5sZW9AZnJvbnRpZXJlMjEuaXQiLCJmaXJzdG5hbWUiOiJBbmRyZWEiLCJsYXN0bmFtZSI6IkxlbyIsImVtYWlsdmVyaWZpZWQiOnRydWUsImlhdCI6MTU4MjMxMTE4NSwiYXVkIjoiaHR0cHM6Ly90aWxlZGVzay5jb20iLCJpc3MiOiJodHRwczovL3RpbGVkZXNrLmNvbSIsInN1YiI6InVzZXIiLCJqdGkiOiI4NjIwOTgzNi0wY2JhLTQzMTItYTEwZS01N2NmOGMxMzk0OWIifQ.xS5Bz40oWgziDnMTFKgXl12ipRZrUopGdfbULhBUJcY');
+//                     //httpRequest.send(JSON.stringify({"name":"log_in","attributes": {"id_user":event_data.detail.global.senderId, "status":"49","subtype":"info", "fullname":event_data.detail.global.attributes.userFullname, "email":event_data.detail.global.attributes.userEmail, "attributes":event_data.detail.global.attributes}}));
+//                   httpRequest.send(JSON.stringify({"name":"log_in","attributes": {"id_user":event_data.detail.global.senderId, "fullname":event_data.detail.global.attributes.userFullname, "email":event_data.detail.global.attributes.userEmail, "attributes":event_data.detail.global.attributes}}));
+//                 });
+
+                // window.tiledesk.on('onNewConversationComponentInit', function(event_data) {
+                //   console.log("onNewConversationComponentInit");
+                //   const tenant = window.tiledesk.angularcomponent.component.g.tenant;
+                //   const projectid = window.tiledesk.angularcomponent.component.g.projectid;
+                //   const channelType = window.tiledesk.angularcomponent.component.g.channelType;
+                //   const senderFullname = window.tiledesk.angularcomponent.component.g.userFullname;
+                //   const userEmail = window.tiledesk.angularcomponent.component.g.userEmail;
+                //   const widgetTitle = window.tiledesk.angularcomponent.component.g.widgetTitle;
+                //   const senderId = window.tiledesk.angularcomponent.component.g.senderId;
+                //   const conversationWith = event_data.detail.newConvId;
+                //   const recipientFullname = 'guest';
+                //   const message = 'hello';
+                //   const type = 'text';
+                //   window.tiledesk.sendMessage(
+                //     tenant,
+                //     senderId,
+                //     senderFullname,
+                //     message,
+                //     type,
+                //     null,
+                //     conversationWith,
+                //     recipientFullname,
+                //     {test:'test attributes', subtype: 'info'},
+                //     projectid,
+                //     'group'
+                //   )
+                //     // window.tiledesk.angularcomponent.component.g.currentConversationComponent.setAvailableAgentsStatus();
+                // });
+
+
+                // window.tiledesk.on('onNewConversationComponentInit', function(event_data) {
+                //   console.log("onNewConversationComponentInit");
+                //   const message = 'hello';
+                //   const recipientId = event_data.detail.newConvId;
+                //   const type = 'text';
+                //   const metadata = {};
+                //   const attributes = {test:'test attributes', subtype: 'info'};
+                //   window.tiledesk.sendSupportMessage(
+                //     message,
+                //     recipientId,
+                //     type,
+                //     metadata,
+                //     attributes
+                //   )
+                // });
+                
+                
+              
+                // window.tiledesk['beforeDepartmentsFormRender'] = function(departments){ 
+                //   console.log('beforeDepartmentsFormRender', departments);
+                //   var lang = window.tiledesk.angularcomponent.component.g.lang;
+                //   if (lang && lang === 'ca'){
+                //     return departments.filter(function(dep) {
+                //         if (!dep.name.includes('Spanish')){
+                //           return dep;
+                //         }
+                //     });
+                //   } else {
+                //     return departments.filter(function(dep) {
+                //         if (!dep.name.includes('Valenciano')){
+                //           return dep;
+                //         }
+                //     });
+                //   }
+                // }
+
+                // window.tiledesk['beforeDepartmentsFormRender'] = function(departments){ 
+                //   console.log('beforeDepartmentsFormRender', departments);
+                //   var lang = window.tiledesk.angularcomponent.component.g.lang;
+                //   if (lang && lang === 'ca'){
+                //     return departments.filter(function(dep) {
+                //         if (!dep.name.includes(':Spanish')){
+                //           dep.name = dep.name.split(":")[0]
+                //           return dep;
+                //         }
+                //     });
+                //   } else {
+                //     return departments.filter(function(dep) {
+                //         if (!dep.name.includes(':Valenciano')){
+                //           dep.name = dep.name.split(":")[0]
+                //           return dep;
+                //         }
+                //     });
+                //   }
+                // }
+
+ 
+                // window.tiledesk['beforeDepartmentsFormRender'] = function(deps){ 
+                //   console.log('beforeDepartmentsFormRender', deps);
+                //   var departments = JSON.parse(JSON.stringify(deps));
+                //   var lang = window.tiledesk.angularcomponent.component.g.lang;
+                //   if (lang && lang === 'ca'){
+                //     return departments.filter(function(dep) {
+                //         if (dep.name.includes(':Spanish')){
+                //           dep.name = dep.name.split(":")[0]
+                //           return dep;
+                //         }
+                //     });
+                //   } else {
+                //     return departments.filter(function(dep) {
+                //         if (dep.name.includes(':Valenciano')){
+                //           dep.name = dep.name.split(":")[0]
+                //           return dep;
+                //         }
+                //     });
+                //   }
+                // }
+                // window.tiledesk.on('getImageUrlThumb', function(event_data) {
+                //   var message =  event_data.detail.message;
+                //   //if(message.sender === 'bot'){
+                //     message.sender_urlImage = "https://user-images.githubusercontent.com/9556761/64333473-de3cfa80-cfd6-11e9-971b-c00c41dd2f91.png";
+                //   //}
+                // });
+                
+                // window.tiledesk.on('isLoggedIn', function(event_data) {
+                //   window.tiledesk.sendMessage(
+                //     "Andrea", // sender fullnname
+                //     "support-group-" + Date.now(), // recipient id
+                //     "Andrea", // recipient fullname
+                //     "hello", // message
+                //     "text", // message type
+                //     null, // metadata
+                //     {subtype: "info"} // additional_attributes (always merged with session attributes)
+                //   )
+                // });
+
+                // window.tiledesk.on('onBeforeDepartmentsFormRender', function(event_data) {
+                //   var departments =  event_data.detail.departments;
+                //   var lang = window.tiledesk.angularcomponent.component.g.lang;
+                //   console.log('onBeforeDepartmentsFormRender', departments, lang);
+                //   if (lang && lang === 'ca'){
+                //     return departments.filter(function(dep) {
+                //         if (dep.name.includes(':Spanish')){
+                //           dep.name = dep.name.split(":")[0]
+                //           return dep;
+                //         }
+                //     });
+                //   } else {
+                //     return departments.filter(function(dep) {
+                //         if (dep.name.includes(':Valenciano')){
+                //           dep.name = dep.name.split(":")[0]
+                //           return dep;
+                //         }
+                //     });
+                //   }
+                // });
+
+                
+                // function messageRender(){ 
+                //   console.log('messageRender');
+                //   return true;
+                // }
+
+              };
+              
+
+            </script>
+    </head>
+    <body>
+        <p style="text-align: right"><a href="www.google.it">link</a></p>
+    </body>
+</html>
