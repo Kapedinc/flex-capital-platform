@@ -1,6 +1,8 @@
 # flex-capital-platform
 https://www.youtube.com/watch?v=6P4UIVc2SF0
 
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/N4N5EWGAK)
+
 <div>
   <h2>
   Launching Kaped Rewards
