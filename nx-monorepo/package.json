@@ -8,7 +8,7 @@
   },
   "private": true,
   "dependencies": {
-    "@nrwl/next": "14.6.3",
+    "@nrwl/next": "14.8.6",
     "next": "12.2.5",
     "react": "18.2.0",
     "react-dom": "18.2.0"
